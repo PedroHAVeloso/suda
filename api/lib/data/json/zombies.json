@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "location": {
+      "country": "BRA",
+      "state": "SP",
+      "city": "Marília"
+    },
+    "age": 20,
+    "gender": 1,
+    "weight": 60.00,
+    "height": 1.80,
+    "blood_type": "A+",
+    "musics": [],
+    "games": [],
+    "sports": []
+  },
+  {
+    "id": 2,
+    "location": {
+      "country": "BRA",
+      "state": "SP",
+      "city": "Marília"
+    },
+    "age": 20,
+    "gender": 1,
+    "weight": 60.00,
+    "height": 1.80,
+    "blood_type": "A+",
+    "musics": [],
+    "games": [],
+    "sports": []
+  },
+  {
+    "id": 3,
+    "location": {
+      "country": "BRA",
+      "state": "SP",
+      "city": "Marília"
+    },
+    "age": 20,
+    "gender": 1,
+    "weight": 60.00,
+    "height": 1.80,
+    "blood_type": "A+",
+    "musics": [],
+    "games": [],
+    "sports": []
+  }
+]
