@@ -1,4 +1,5 @@
 import 'package:suda_api/models/location_model.dart';
+import 'package:suda_api/utils/generate_string.dart';
 
 class ZombieModel {
   ZombieModel({
@@ -16,7 +17,7 @@ class ZombieModel {
 
   factory ZombieModel.fromJson(Map<String, dynamic> json) {
     return ZombieModel(
-      id: json['id'] as int,
+      id: json['id'] != null ? json['id'] as String : generateString(100),
       location:
           LocationModel.fromJson(json['location'] as Map<String, dynamic>),
       age: json['age'] as int,
@@ -42,7 +43,7 @@ class ZombieModel {
     );
   }
 
-  final int id;
+  final String id;
   final LocationModel location;
   final int age;
   final int gender;
