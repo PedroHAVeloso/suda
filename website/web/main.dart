@@ -1,5 +1,5 @@
-import 'dart:html';
+import 'package:suda_website/app.dart';
 
 void main() {
-  querySelector('#output')?.text = 'Your Dart app is running.';
+  app();
 }
