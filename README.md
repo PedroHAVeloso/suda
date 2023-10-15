@@ -1,3 +1,18 @@
+Para vencer o fim do mundo — o apocalipse zumbi — apresentamos o SUDA, sigla para Sistema Universal de Defesa Apocalíptico. Uma rede com informações e dados, além de funções para o auxílio na luta contra os infectados.
+
+O SUDA foi dividido em três principais frentes (projetos), cada um com seu objetivo. São eles:
+
+- SUDA - API
+  - Protocolo de Perigo
+  - Dados Populacionais
+- SUDA - Website
+  - Consultas Universais
+- SUDA - Embarcado
+  - Defesa Patonal
+
+Abaixo, um diagrama explicando  melhor cada componente do SUDA:
+![Diagrama](./suda_diagram.png)
+
 API rotas
 
 ## Listar todos os zumbis
@@ -27,7 +42,7 @@ Resposta (tipos):
 
 Resposta (exemplo):
 
-`200`, body:
+`200`, corpo:
 
 ```json
 [
@@ -56,7 +71,7 @@ Resposta (exemplo):
 
 `POST /zombies`
 
-Requisição (tipos):
+Requisição, corpo (tipos):
 
 ```
 {
@@ -76,7 +91,7 @@ Requisição (tipos):
 }
 ```
 
-Requisição (exemplo):
+Requisição, corpo (exemplo):
 
 ```json
 {
