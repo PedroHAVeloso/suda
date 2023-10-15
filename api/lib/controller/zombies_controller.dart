@@ -2,8 +2,10 @@ import 'dart:convert';
 
 import 'package:suda_api/data/json/json_data_reader.dart';
 import 'package:suda_api/data/json/json_data_writer.dart';
+import 'package:suda_api/models/danger_model.dart';
 import 'package:suda_api/models/zombie_model.dart';
 import 'package:suda_api/services/add_zombie.dart' as services;
+import 'package:suda_api/services/dp_get_all_zombies.dart' as services;
 import 'package:suda_api/services/get_all_zombies.dart' as services;
 
 class ZombiesController {
@@ -26,5 +28,9 @@ class ZombiesController {
     } catch (error) {
       return false;
     }
+  }
+
+  Future<List<DangerModel>> dpGetAllZombies() {
+    return services.dpGetAllZombies(_reader);
   }
 }

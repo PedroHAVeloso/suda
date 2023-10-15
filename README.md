@@ -1,17 +1,28 @@
-Para vencer o fim do mundo — o apocalipse zumbi — apresentamos o SUDA, sigla para Sistema Universal de Defesa Apocalíptico. Uma rede com informações e dados, além de funções para o auxílio na luta contra os infectados.
+# SUDA - Sistema Universal de Defesa Apocalíptico.
 
-O SUDA foi dividido em três principais frentes (projetos), cada um com seu objetivo. São eles:
+<!-- Descrição -->
+Para vencer o fim do mundo — o apocalipse zumbi — apresentamos o SUDA, sigla para Sistema Universal de Defesa Apocalíptico. 
 
-- SUDA - API
+Uma rede com informações e dados, além de funções, para o auxílio na luta contra os infectados.
+
+# 📜 Resumo.
+
+O SUDA foi dividido em três principais frentes (projetos), cada um com seu objetivo. São elas:
+
+- `SUDA - API`
   - Protocolo de Perigo
   - Dados Populacionais
-- SUDA - Website
+- `SUDA - Website`
   - Consultas Universais
-- SUDA - Embarcado
+- `SUDA - Embarcado`
   - Defesa Patonal
 
 Abaixo, um diagrama explicando  melhor cada componente do SUDA:
 ![Diagrama](./suda_diagram.png)
+
+# 🗒️ Sumário.
+
+
 
 API rotas
 
