@@ -18,25 +18,16 @@
     padding: 0;
     text-decoration: none;
   }
+
+  body,
+  #root {
+    height: 100vh;
+    height: 100dvh;
+  }
 </style>
 
-<body class="p-2 text-orange-600 flex flex-col gap-2">
-  <header class="w-full py-2 px-4 rounded-xl flex items-center gap-4 bg-orange-100">
-    <h1 class="font-bold text-3xl">SUDA</h1>
-    <h2>Sistema Universal de Defesa Apocalíptico</h2>
-  </header>
-
-  <main>
-    <article style="display: flex;" id="loading">
-      <p>Carregando...</p>
-    </article>
-
-    <article style="display: none;" id="options" class="w-full p-2 gap-2 rounded-xl bg-orange-50">
-    </article>
-
-    <article style="display: none;" id="search" class="w-full p-2 rounded-xl bg-orange-50">
-    </article>
-  </main>
+<body>
+  <div id="root"></div>
 </body>
 
 </html>
