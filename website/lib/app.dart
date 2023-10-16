@@ -25,7 +25,9 @@ DeactNode app() {
         ],
       ),
       main(
-        children: [],
+        children: [
+          button(children: [txt('')]),
+        ],
       ),
     ],
   );
