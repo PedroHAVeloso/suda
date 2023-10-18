@@ -43,8 +43,14 @@
     "weight": 60.0,
     "height": 1.8,
     "blood_type": "A+",
-    "musics": [],
-    "games": [],
+    "musics": [
+      "asdasdasdas",
+      "asdasdasdasdas"
+    ],
+    "games": [
+      "asdasdasdas",
+      "asdasdasdasdas"
+    ],
     "sports": []
   },
   {
@@ -59,9 +65,18 @@
     "weight": 20.0,
     "height": 20.0,
     "blood_type": "A+",
-    "musics": [],
-    "games": [],
-    "sports": []
+    "musics": [
+      "asdasdasdas",
+      "asdasdasdasdas"
+    ],
+    "games": [
+      "asdasdasdas",
+      "asdasdasdasdas"
+    ],
+    "sports": [
+      "asdasdasdas",
+      "asdasdasdasdas"
+    ]
   },
   {
     "id": "4e1a46qyYqSwwvLnk2xWf7o9yZppzmRSlOUTDcctCwPCcZxskRT4KU7rTYmbjYcuZD22mG1kMK7IRT6eLJXc8Ghs7o1pLFSElCwK",
@@ -75,9 +90,18 @@
     "weight": 20.0,
     "height": 20.0,
     "blood_type": "A+",
-    "musics": [],
-    "games": [],
-    "sports": []
+    "musics": [
+      "asdasdasdas",
+      "asdasdasdasdas"
+    ],
+    "games": [
+      "asdasdasdas",
+      "asdasdasdasdas"
+    ],
+    "sports": [
+      "asdasdasdas",
+      "asdasdasdasdas"
+    ]
   },
   {
     "id": "DgIwt1WAP7YsPbfpnYh9uqGRZzYSYMA9fkb8RN23lUe6YJRDmoKEij1XZ3GqOxhhRo75meb4dFNQCgvEAtw5tI1S6gpK7NlTnSN8",
@@ -91,7 +115,10 @@
     "weight": 60.0,
     "height": 1.8,
     "blood_type": "A+",
-    "musics": [],
+    "musics": [
+      "asdasdasdas",
+      "asdasdasdasdas"
+    ],
     "games": [],
     "sports": []
   },
