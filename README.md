@@ -1,9 +1,5 @@
-webdev serve web:7880 --auto=refresh
-dart_frog dev --port 7875
-
 # SUDA - Sistema Universal de Defesa Apocalíptico.
 
-<!-- Descrição -->
 Para vencer o fim do mundo — o apocalipse zumbi — apresentamos o SUDA, sigla para Sistema Universal de Defesa Apocalíptico. 
 
 Uma rede com informações e dados, além de funções, para o auxílio na luta contra os infectados.
@@ -25,9 +21,11 @@ Abaixo, um diagrama explicando  melhor cada componente do SUDA:
 
 # 🗒️ Sumário.
 
-# Como rodar o projeto.
+<!-- TODO! -->
 
-Você tem duas opções para rodar e testar esse projeto: usando Docker (mais rápido) ou com o Dart SDK (mais demorado e chato).
+# 🚨 Como rodar o projeto.
+
+Você tem duas opções para rodar e testar esse projeto: usando Docker (mais rápido e confiável) ou com o Dart SDK.
 
 Vou ensinar as duas formas nesse tópico, mas, primeiramente, você deve fazer algo antes de realizar qualquer uma delas, clonar o projeto:
 
@@ -35,7 +33,7 @@ Vou ensinar as duas formas nesse tópico, mas, primeiramente, você deve fazer a
 git clone https://github.com/PedroHAVeloso/suda.git
 ```
 
-Depois de clonado, só entrar na pasta do projeto:
+Depois de clonado, basta entrar na pasta do projeto:
 
 ```shell
 cd suda
@@ -75,15 +73,71 @@ Feito essas duas etapas, vamos para o que mais interessa:
   dart bin/main.dart
   ```
 
-  Para mais detalhes de como usar cada um, vá para o tópico [Como utilizar](#como-utilizar).
+  Para mais detalhes de como usar cada um, vá para o tópico [🧐 Como utilizar?](#-como-utilizar).
 
 </details>
 
-<br />
-
 **Se preferir o Dart SDK:**
 <details>
-  <summary>🎯 Rodando o projeto com o Dart SDK</summary>
+  <summary>🎯 Rodando o projeto com o Dart SDK.</summary>
+
+  ### Pelo jeito você usa Dart, hein... Vamos lá.
+  
+  > A princípio, é claro, você deve ter o [Dart SDK](https://dart.dev/get-dart) instalado na sua máquina. Confirmado isso, prossiga.
+
+  Ao clonar e entrar na pasta do projeto, você deve ter notado que ele está divido em três pastas. Recomendo você abrir 3 terminais. Um em cada pasta (api, website, embedded).
+
+  Dentro da pasta api, instale o Dart Frog:
+  
+  `$ suda/api/`
+  ```shell
+  dart pub global activate dart_frog_cli
+  ```
+
+  Após isso, instale todas as dependências da API:
+  ```shell
+  dart pub get
+  ```  
+
+  Por final, inicie a API:
+  ```shell
+  dart_frog dev --port 7875
+  ```
+
+  **Pronto, a SUDA - API estará rodando na sua máquina. Vamos para o próximo: o SUDA - Website.**
+  
+  Dentro da pasta do website, no outro terminal, instale o Dart Webdev:
+
+  `$ suda/website/`
+  ```shell
+  dart pub global activate webdev
+  ```
+
+  Feito a instalação, instale todas as dependências do website:
+  ```shell
+  dart pub get
+  ```  
+
+  Agora, inicie o site:
+  ```shell
+  webdev serve web:7880
+  ```
+
+  **Você também terá o site do sistema funcionando no seu computador. A seguir, o último passo: SUDA - Embarcado.**
+
+  No terceiro terminal que você abriu, instale as dependências do embarcado:
+  
+  `$ suda/embedded/`
+  ```shell
+  dart pub get
+  ``` 
+
+  E inicie o programa de terminal:
+  ```shell
+  dart bin/main.dart
+  ```
+
+  **O SUDA - Embarcado também estará rodando na sua máquina. Parabéns!**
 </details>
 
 # 🧐 Como utilizar?
@@ -92,7 +146,7 @@ Feito essas duas etapas, vamos para o que mais interessa:
 
 > Explicarei, neste tópico, o motivo das principais escolhas feitas no projeto, como as tecnologias usadas.
 
-#### Primeiramente, destaco o principal: o uso de Dart em tudo.
+### Primeiramente, destaco o principal: o uso de Dart em tudo.
 
 De início, ao avaliar como realizaria o desafio, pensei em dividir ele nos três ramos que você já deve ter visto aqui. Um site, um embarcado e uma API. 
 
@@ -126,9 +180,19 @@ Tem tudo necessário para uma boa API, no que se propõe, é fenomenal. Sempre u
 
 Aqui, a explicação se torna a mais curta. Usei apenas Dart. Um projeto básico para console, nada complexo. No máximo, uma dependência (http) para comunicação com a API. Nada mais. 
 
-# API
+### Outras decisões...
 
-## Listar todos os zumbis
+Além de escolher a base da criação de cada parte do sistema que, como já dito anteriormente, foi feito completamente em Dart, ao longo do projeto também tomei algumas outras decisões corriqueiras. Cabe-se mencionar, nesse pequeno trecho, algumas delas:
+
+- **TailwindCSS**: para estilização do site, com o objetivo de manter um visual minimamente descente (na medida das habilidades do programador quem vos fala). Deixou o processo de estilização mais rápido, bom pelo curto tempo de desenvolvimento.
+
+- **JSON ao invés de um banco estruturado**: na construção da API e, um pouco após, na construção do embarcado, precisei de alguma opção para armazenar as informações do sistema. Para isso, preferi optar por arquivos JSON. Claro, ao longo do tempo, de maneira especulativa, caso houvesse uma injeção maior de dados, esse armazenamento não seria eficiente. Entretanto, organizei as camadas da API para facilitar a troca do tipo de banco de dados. O que está no mais alto nível não depende do que está no mais baixo nível e, ao invés disso, apenas usa uma interface comum entre os dois, um pouco de arquitetura limpa aplicada em um projeto tão pequeno. 
+
+# 📄 Documentações...
+
+## API
+
+### Listar todos os zumbis
 
 `GET /zombies`
 
@@ -180,7 +244,7 @@ Resposta (exemplo):
 ]
 ```
 
-## Adicionar um zumbi
+### Adicionar um zumbi
 
 `POST /zombies`
 
