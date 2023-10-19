@@ -86,8 +86,6 @@ Feito essas duas etapas, vamos para o que mais interessa:
   <summary>🎯 Rodando o projeto com o Dart SDK</summary>
 </details>
 
-<br />
-
 # 🧐 Como utilizar?
 
 # 🤔 Por quê?
