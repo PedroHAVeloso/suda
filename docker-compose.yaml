@@ -1,0 +1,21 @@
+version: "1.0"
+
+services:
+  api:
+    build:
+      context: ./api/
+      dockerfile: Dockerfile
+    container_name: suda_api
+    ports:
+      - "7875:8080"
+    tty: true
+    command: [ "dart_frog", "dev", "-p", "8080" ]
+  website:
+    build:
+      context: ./website/
+      dockerfile: Dockerfile
+    container_name: suda_website
+    ports:
+      - "7880:8080"
+    tty: true
+    command: [ "webdev", "serve", "--hostname", "0.0.0.0" ]

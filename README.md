@@ -1,3 +1,6 @@
+webdev serve web:7880 --auto=refresh
+dart_frog dev --port 7875
+
 # SUDA - Sistema Universal de Defesa Apocalíptico.
 
 <!-- Descrição -->
@@ -21,6 +24,48 @@ Abaixo, um diagrama explicando  melhor cada componente do SUDA:
 ![Diagrama](./suda_diagram.png)
 
 # 🗒️ Sumário.
+
+# Como rodar o projeto.
+
+Você tem duas opções para rodar e testar esse projeto: usando Docker (mais rápido) ou com o Dart SDK (mais demorado e chato).
+
+Vou ensinar as duas formas nesse tópico, mas, primeiramente, você deve fazer algo antes de realizar qualquer uma delas, clonar o projeto:
+
+```shell
+git clone https://github.com/PedroHAVeloso/suda.git
+```
+
+Depois de clonado, só entrar na pasta do projeto:
+
+```shell
+cd suda
+``` 
+
+Feito essas duas etapas, vamos para o que mais interessa:
+
+### Rodando o projeto com Docker.
+
+Deixando claro: você vai precisar do [Docker](https://www.docker.com/) e do [Docker Compose](https://docs.docker.com/compose/) (mais especificamente: o Compose V2). Não vou ensinar como os instalar, clicando nos nomes deles você já terá o tutorial disso.
+
+Primeiramente, você precisa buildar as imagens do projeto, para isso, feito os passos anteriores (clonar o repositório e entrar na pasta dele), cole o seguinte comando no terminal:
+
+```shell
+docker compose build
+```
+
+Talvez demore um pouco, após finalizar, bastará iniciar os containers.
+
+> Deixando outro aviso: as portas 7875, 7880 e 7885 serão necessárias para esses containers e para o funcionamento do projeto, espero que elas não sejam usadas no seu computador 🙂.
+
+Cole o comando abaixo para criar os containers:
+
+```shell
+docker compose up -d
+```
+
+Pronto! Parabéns, você fez o projeto rodar. Agora, para usar o SUDA Web, basta entrar no seu navegador no http://localhost:7880. Se quiser usar a API, ela está no http://localhost:7875. Para mais detalhes de como usar cada um, vá para o tópico [Como utilizar](#como-utilizar).
+
+# Como utilizar?
 
 # 🤔 Por quê?
 

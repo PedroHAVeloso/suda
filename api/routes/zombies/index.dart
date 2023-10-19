@@ -7,7 +7,7 @@ final zombiesController = ZombiesController();
 
 Future<Response> onRequest(RequestContext context) async {
   final method = context.request.method;
-  
+
   // All
   if (method == HttpMethod.get) {
     final zombies = await zombiesController.getAllZombies();
