@@ -43,29 +43,52 @@ cd suda
 
 Feito essas duas etapas, vamos para o que mais interessa:
 
-### Rodando o projeto com Docker.
+**Se preferir o Docker:**
+<details>
+  <summary>📦️ Rodando o projeto com Docker.</summary>
 
-Deixando claro: você vai precisar do [Docker](https://www.docker.com/) e do [Docker Compose](https://docs.docker.com/compose/) (mais especificamente: o Compose V2). Não vou ensinar como os instalar, clicando nos nomes deles você já terá o tutorial disso.
+  ### Vamos usar a magia do Docker para rodar?
+  
+  > Deixando claro: você vai precisar do [Docker](https://www.docker.com/) e do [Docker Compose](https://docs.docker.com/compose/) (mais especificamente: o Compose V2). Não vou ensinar como os instalar, clicando nos nomes deles você já terá o tutorial disso.
 
-Primeiramente, você precisa buildar as imagens do projeto, para isso, feito os passos anteriores (clonar o repositório e entrar na pasta dele), cole o seguinte comando no terminal:
+  Primeiramente, você precisa buildar as imagens do projeto, para isso, feito os passos anteriores (clonar o repositório e entrar na pasta dele), cole o seguinte comando no terminal:
 
-```shell
-docker compose build
-```
+  ```shell
+  docker compose build
+  ```
 
-Talvez demore um pouco, após finalizar, bastará iniciar os containers.
+  Talvez demore um pouco, após finalizar, bastará iniciar os containers.
 
-> Deixando outro aviso: as portas 7875, 7880 e 7885 serão necessárias para esses containers e para o funcionamento do projeto, espero que elas não sejam usadas no seu computador 🙂.
+  > Deixando outro aviso: as portas 7875, 7880 e 7885 serão necessárias para esses containers e para o funcionamento do projeto, espero que elas não sejam usadas no seu computador 🙂.
 
-Cole o comando abaixo para criar os containers:
+  Cole o comando abaixo para criar os containers:
 
-```shell
-docker compose up -d
-```
+  ```shell
+  docker compose up -d
+  ```
 
-Pronto! Parabéns, você fez o projeto rodar. Agora, para usar o SUDA Web, basta entrar no seu navegador no http://localhost:7880. Se quiser usar a API, ela está no http://localhost:7875. Para mais detalhes de como usar cada um, vá para o tópico [Como utilizar](#como-utilizar).
+  Pronto! Parabéns, você fez o projeto rodar. Agora, para usar o SUDA - Website, basta entrar no seu navegador no http://localhost:7880. Se quiser usar a SUDA - API, ela está no http://localhost:7875. Ademais, caso queira testar o SUDA - Embarcado, você precisará seguir os passos adicionais abaixo:
 
-# Como utilizar?
+  ```shell
+  docker compose exec embedded bash
+
+  dart bin/main.dart
+  ```
+
+  Para mais detalhes de como usar cada um, vá para o tópico [Como utilizar](#como-utilizar).
+
+</details>
+
+<br />
+
+**Se preferir o Dart SDK:**
+<details>
+  <summary>🎯 Rodando o projeto com o Dart SDK</summary>
+</details>
+
+<br />
+
+# 🧐 Como utilizar?
 
 # 🤔 Por quê?
 

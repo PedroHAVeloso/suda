@@ -9,7 +9,7 @@ class DangerModel {
   factory DangerModel.fromJson(Map<String, dynamic> json) {
     return DangerModel(
       id: json['id'] as String,
-      strength: json['strengh'] as int,
+      strength: json['strength'] as int,
       speed: json['speed'] as int,
       intelligence: json['intelligence'] as int,
     );

@@ -19,3 +19,11 @@ services:
       - "7880:8080"
     tty: true
     command: [ "webdev", "serve", "--hostname", "0.0.0.0" ]
+  embedded:
+    build:
+      context: ./embedded/
+      dockerfile: Dockerfile
+    container_name: suda_embedded
+    ports:
+      - "7885:8080"
+    tty: true
