@@ -8,7 +8,7 @@ Uma rede com informações e dados, além de funções, para o auxílio na luta 
 
 <div align="end">
   <small>
-    Desenvolvido por <a href="https://github.com/pedrohaveloso">pedrohaveloso</a> 💙 durante o <a href="https://oficial.unimar.br/eventos/bootcamp-jovem-programador/">Bootcamp Jovem Programador 2023</a>. 
+    Desenvolvido por <a href="https://github.com/pedrohaveloso">pedrohaveloso</a> durante o <a href="https://coderchallenge.dsin.com.br/">DSIN CODER CHALLENGE</a>. 
   </small>
   <br />
   <small>
@@ -347,7 +347,7 @@ Concluindo esse leia-me, agradeço a DSIN e sua equipe, pela realização do des
 
 <div align="end">
   <small>
-    Desenvolvido por <a href="https://github.com/pedrohaveloso">pedrohaveloso</a> 💙 durante o <a href="https://oficial.unimar.br/eventos/bootcamp-jovem-programador/">Bootcamp Jovem Programador 2023</a>. 
+    Desenvolvido por <a href="https://github.com/pedrohaveloso">pedrohaveloso</a> durante o <a href="https://coderchallenge.dsin.com.br/">DSIN CODER CHALLENGE</a>. 
   </small>
   <br />
   <small>
