@@ -12,9 +12,9 @@ void app() {
 
 Future<void> program() async {
   stdout.writeln(
-    'Função desejada: \n'
-    '[1] - Listar todos os infectados. \n'
-    '[2] - Pesquisar periculosidade por ID.',
+    'Função desejada: \n'.white() +
+        '[1] - Listar todos os infectados. \n'.blue() +
+        '[2] - Pesquisar periculosidade por ID.'.green(),
   );
 
   final func = int.tryParse(stdin.readLineSync() ?? '0') ?? 0;
@@ -34,11 +34,11 @@ Future<void> program() async {
   }
 
   if (func == 2) {
-    stdout.writeln('Informe o ID: ');
+    stdout.writeln('Informe o ID: '.green());
     final id = stdin.readLineSync() ?? '';
     final danger = await getDangerProtocol(id);
     if (danger == null) {
-      stdout.writeln('ID não encontrado. ');
+      stdout.writeln('ID não encontrado.'.red());
       await program();
       return;
     }
