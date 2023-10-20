@@ -4,6 +4,38 @@ Para vencer o fim do mundo — o apocalipse zumbi — apresentamos o SUDA, sigla
 
 Uma rede com informações e dados, além de funções, para o auxílio na luta contra os infectados.
 
+---
+
+<div align="end">
+  <small>
+    Desenvolvido por <a href="https://github.com/pedrohaveloso">pedrohaveloso</a> 💙 durante o <a href="https://oficial.unimar.br/eventos/bootcamp-jovem-programador/">Bootcamp Jovem Programador 2023</a>. 
+  </small>
+  <br />
+  <small>
+    <address>
+      E-mail: 
+      <a href="mailto:contatopedrohalves@gmail.com">
+        <em>contatopedrohalves@gmail.com</em>
+      </a>
+      <br />
+      WhatsApp:
+      <a href="tel:+5514981838507">
+        <em>14 98183-8507</em>
+      </a>
+    </address>
+  </small>
+</div>
+
+---
+
+# 🗒️ Sumário.
+
+- [📜 Resumo.](#-resumo)
+- [🚨 Como rodar o projeto.](#-como-rodar-o-projeto)
+- [🧐 Como utilizar?](#-como-utilizar)
+- [🤔 Por quê?](#-por-quê)
+- [📄 Documentações...](#-documentações)
+
 # 📜 Resumo.
 
 O SUDA foi dividido em três principais frentes (projetos), cada um com seu objetivo. São elas:
@@ -18,10 +50,6 @@ O SUDA foi dividido em três principais frentes (projetos), cada um com seu obje
 
 Abaixo, um diagrama explicando  melhor cada componente do SUDA:
 ![Diagrama](./suda_diagram.png)
-
-# 🗒️ Sumário.
-
-<!-- TODO! -->
 
 # 🚨 Como rodar o projeto.
 
@@ -142,6 +170,23 @@ Feito essas duas etapas, vamos para o que mais interessa:
 
 # 🧐 Como utilizar?
 
+Para usar, é simples: 
+
+A API está disponível no endereço http://localhost:7875, para mais detalhes sobre as rotas, consulte o tópico [Documentação](#-documentações).
+
+O website está disponível no endereço http://localhost:7880.
+
+O embarcado pode ser acessado pelo terminal do Docker usando:
+```shell
+docker compose exec embedded bash
+
+dart bin/main.dart
+```
+Ou com o Dart SDK na pasta `./suda/embedded` com:
+```shell
+dart bin/main.dart
+```
+
 # 🤔 Por quê?
 
 > Explicarei, neste tópico, o motivo das principais escolhas feitas no projeto, como as tecnologias usadas.
@@ -190,7 +235,9 @@ Além de escolher a base da criação de cada parte do sistema que, como já dit
 
 # 📄 Documentações...
 
-## API
+> Em geral, os arquivos, classes, funções e todo código criado já foi documentado, para saber, entre nos arquivos. Ademais, esse tópico apenas terá a documentação para requisições e respostas da API.
+
+## Rotas da API.
 
 ### Listar todos os zumbis
 
@@ -291,3 +338,31 @@ Requisição, corpo (exemplo):
 Resposta (exemplo):
 
 `200`
+
+# ❤️ Agradecimentos.
+
+Concluindo esse leia-me, agradeço a DSIN e sua equipe, pela realização do desafio [DSIN CODER CHALLENGE](https://coderchallenge.dsin.com.br).
+
+---
+
+<div align="end">
+  <small>
+    Desenvolvido por <a href="https://github.com/pedrohaveloso">pedrohaveloso</a> 💙 durante o <a href="https://oficial.unimar.br/eventos/bootcamp-jovem-programador/">Bootcamp Jovem Programador 2023</a>. 
+  </small>
+  <br />
+  <small>
+    <address>
+      E-mail: 
+      <a href="mailto:contatopedrohalves@gmail.com">
+        <em>contatopedrohalves@gmail.com</em>
+      </a>
+      <br />
+      WhatsApp:
+      <a href="tel:+5514981838507">
+        <em>14 98183-8507</em>
+      </a>
+    </address>
+  </small>
+</div>
+
+---

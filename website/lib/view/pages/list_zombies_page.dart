@@ -4,7 +4,6 @@ import 'package:deact/deact.dart';
 import 'package:deact/deact_html52.dart';
 import 'package:suda_website/data/get_all_zombies.dart';
 import 'package:suda_website/view/style/color.dart';
-import 'package:suda_website/view/widgets/header_widget.dart';
 import 'package:suda_website/view/widgets/zombie_widget.dart';
 
 DeactNode listZombiesPage() {
@@ -12,7 +11,6 @@ DeactNode listZombiesPage() {
     id: 'list-zombies-page',
     className: 'p-2 text-$color-900 flex flex-col gap-2',
     children: [
-      headerWidget(),
       main(
         children: [
           globalState<DeactNode?>(

@@ -6,8 +6,10 @@ import 'package:suda_website/view/style/color.dart';
 
 DeactNode zombieWidget(ZombieModel zombie) {
   return section(
-    className: 'bg-$color-100 rounded-xl p-2 gap-2 flex flex-col min-w-[200px] '
-        'max-w-[300px]',
+    className: '''
+        bg-$color-100 rounded-xl p-2 gap-2 flex flex-col min-w-[200px] 
+        max-w-[300px]
+    ''',
     children: [
       abbr(
         className: 'no-underline',
