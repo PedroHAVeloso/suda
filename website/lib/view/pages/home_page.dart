@@ -13,6 +13,21 @@ DeactNode homePage() {
       main(
         children: [
           article(
+            className: 'p-2 bg-$color-100 rounded-xl flex items-center '
+                'justify-center',
+            children: [
+              h1(
+                children: [
+                  txt(
+                    'O SUDA Web ainda não está completo...'
+                    ' Mais opções e visuais serão implementados futuramente. '
+                    'Sobreviva até lá.',
+                  ),
+                ],
+              ),
+            ],
+          ),
+          article(
             className: 'p-2 bg-$color-100 rounded-xl',
             children: [
               optionButtonsWidget(),
