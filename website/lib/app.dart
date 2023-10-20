@@ -1,6 +1,5 @@
 import 'package:deact/deact.dart';
 import 'package:suda_website/view/pages/add_zombie_page.dart';
-import 'package:suda_website/view/pages/home_page.dart';
 
 void app() {
   deact(
